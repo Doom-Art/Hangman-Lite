@@ -88,14 +88,14 @@ namespace Hangman_Lite
                     break;
                 }
                 Console.WriteLine("\n\nTake a guess: ");
-                string userGuess = Console.ReadLine().ToUpper();
+                string userGuess = Console.ReadLine().ToUpper().Trim();
                 foreach (string i in alreadyGuessed)
                     if (userGuess == i)
                         userGuess = "";
                 while (userGuess.Length != 1)
                 {
                     Console.WriteLine("You did not make a valid guess please try again?");
-                    userGuess = Console.ReadLine().ToUpper();
+                    userGuess = Console.ReadLine().ToUpper().Trim();
                     foreach (string i in alreadyGuessed)
                         if (userGuess == i)
                             userGuess = "";
@@ -172,14 +172,14 @@ namespace Hangman_Lite
                     break;
                 }
                 Console.WriteLine("\n\nTake a guess: ");
-                string userGuess = Console.ReadLine().ToUpper();
+                string userGuess = Console.ReadLine().ToUpper().Trim();
                 foreach (string i in alreadyGuessed)
                     if (userGuess == i)
                         userGuess = "";
                 while (userGuess.Length != 1)
                 {
                     Console.WriteLine("You did not make a valid guess please try again?");
-                    userGuess = Console.ReadLine().ToUpper();
+                    userGuess = Console.ReadLine().ToUpper().Trim();
                     foreach (string i in alreadyGuessed)
                         if (userGuess == i)
                             userGuess = "";
