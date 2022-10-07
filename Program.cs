@@ -34,6 +34,9 @@ namespace Hangman_Lite
                 }
             }
         }
+        /// <summary>
+        /// plays hangman in multiplayer mode where user can enter the secret word manually
+        /// </summary>
         public static void HangmanMultiplayerMode()
         {
             Console.BackgroundColor = ConsoleColor.Gray;
@@ -129,6 +132,9 @@ namespace Hangman_Lite
                 Console.Clear();
             }
         }
+        /// <summary>
+        /// starts hangman in solo mode where it generates the secret word based off of a pre set list
+        /// </summary>
         public static void HangmanSoloMode()
         {
             Console.BackgroundColor = ConsoleColor.Gray;
@@ -212,6 +218,10 @@ namespace Hangman_Lite
                 Console.Clear();
             }
         }
+        /// <summary>
+        /// Draws the hangman picture based on the amount of incorrect guesses
+        /// </summary>
+        /// <param name="num"></param> how many current incorrect guesses from 0-3
         public static void drawHangman(int num)
         {
             if (num == 0)
