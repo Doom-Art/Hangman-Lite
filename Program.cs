@@ -142,7 +142,7 @@ namespace Hangman_Lite
             Console.Clear();
             Console.WriteLine("Welcome to Hangman Lite Solo, you get up to three incorrect guesses for the secret word.");
             Console.WriteLine("Good Luck");
-            List<string> words = new List<string> { "COMPUTER", "TROLLING","CHEESE", "SEVEN","HIPPO","DISCORD","WING","DEATH","DOOM","GRIM","BOOK","MONKEY","LOKI","THOR","VAMPIRE","HALLOWEEN","YACHT","CAMPING","MONKEYMONKEY", "AI","RATIO","BLANK","WORD","SNAKE","HUNTER","HUNDRED","SWORD","ART","ONLINE","ANIME","SIR","CANADA","LETTER","NUMBER","STUDENT","KEY","ENCRYPT","DECRYPT","TROLL","HEHEHEHEHEHE","TREE","RAM","WRAP", "COOKIE", "WATER", "LEARN","WOLF", "HANGMAN", "KEYBOARD", "RADDISH", "TEACHER", "BOX", "HAPPY", "PHONE", "ROSE", "PROGRAM", "SWEET", "CRUTCH"};
+            List<string> words = new List<string> { "COMPUTER", "TROLLING","CHEESE", "SEVEN","HIPPO","DISCORD","WING","DEATH","DOOM","GRIM","BOOK","MONKEY","LOKI","THOR","VAMPIRE","HALLOWEEN","YACHT","CAMPING","MONKEYMONKEY", "AI","RATIO","BLANK","WORD","SNAKE","HUNTER","HUNDRED","SWORD","ART","ONLINE","ANIME","SIR","CANADA","LETTER","NUMBER","STUDENT","KEY","ENCRYPT","DECRYPT","TROLL","HEHEHEHEHEHE","TREE","RAM","WRAP", "COOKIE", "WATER", "LEARN","WOLF", "HANGMAN", "KEYBOARD", "RADDISH", "TEACHER", "BOX", "HAPPY", "PHONE", "ROSE", "PROGRAM", "SWEET", "CRUTCH", "TAYLOR"};
             Random rand = new Random();
             string secretWord = words[rand.Next(0, words.Count)];
             string displayWord = "";
